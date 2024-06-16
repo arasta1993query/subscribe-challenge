@@ -12,6 +12,6 @@ body {
     background: #EEF5FF;
 }
 
-@layer utilities {
-
+input:checked + .customSelect {
+    @apply bg-blue-100
 }

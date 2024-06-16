@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import './globals.css';
-import Step from '@/app/subscribe/components/Step';
+import Layout from '@/app/subscribe/components/Layout';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,15 +15,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <div className='absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 rounded-xl bg-white py-4 pl-4 lg:h-[600px] lg:w-[875px]'>
-          <div className='relative'>
-            <img src='/images/bg-sidebar-desktop.svg' alt='' />
-            <div className='absolute left-[30px] top-[40px]'>
-              <Step number={1} text='your info' active={true} />
-            </div>
-          </div>
-          <div className='mx-auto w-[390px] pb-4 pt-10'>{children}</div>
-        </div>
+        <Layout>{children}</Layout>
       </body>
     </html>
   );

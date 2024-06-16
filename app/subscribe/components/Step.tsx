@@ -6,7 +6,7 @@ interface IProps {
 
 const Step = ({number, text, active}: IProps) => {
   return (
-    <div className='flex items-center'>
+    <div className='mb-10 flex items-center'>
       <div
         className={`mr-4 flex h-[36px] w-[36px] items-center justify-center rounded-full border  ${
           active ? 'border-cyan-200 bg-cyan-200 text-black' : 'text-white'
